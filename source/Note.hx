@@ -350,12 +350,9 @@ class Note extends FlxSprite
 			noteOffset += width / 2;
 
 			animation.play('${notes[noteData]}holdend');
-
-			if (PlayState.scrollType == 'downscroll')
-			{
-				flipY = true;
-			}
-
+                        
+			if (PlayState.scrollType == 'downscroll') flipY = true;
+			
 			updateHitbox();
 
 			noteOffset -= width / 2;
